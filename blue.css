@@ -14,7 +14,7 @@ body::before {
 
 /* 기본 레이아웃 */
 body {
-  background: #324191;
+  background: #3b44b3;
   font-family: "freight-big-pro", serif;
   height: 100vh;
   display: grid;
@@ -118,7 +118,7 @@ body {
 /* hover 시 피드백 */
 .corner-link:hover .sq,
 .corner-link:focus-visible .sq {
-  background: #324191;
+  background: #3b44b3;
   outline: none;
 }
 
@@ -143,7 +143,13 @@ body {
   outline: none;
   border-radius: 0;
   object-fit: cover;
-  background: #324191; /* 로딩 중에도 배경색 유지 */
+  background: #3b44b3; /* 로딩 중에도 배경색 유지 */
 }
 
 
+html, body {
+  overflow: hidden;
+}
+.panel {
+  overflow: hidden;   /* 스크롤 완전히 차단 */
+}

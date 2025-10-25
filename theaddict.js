@@ -40,5 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 최초 1회 + 주기적 갱신 (리듬은 원하는 값으로 조절)
   retint();
-  setInterval(retint, 2400); // 1.8s마다 새로운 40%
+  setInterval(retint, 2000); // 1.8s마다 새로운 40%
 });

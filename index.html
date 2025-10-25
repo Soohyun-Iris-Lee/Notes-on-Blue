@@ -1,64 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Notes on Blue</title>
-    <link rel="stylesheet" href="https://use.typekit.net/yce2qid.css">
-    <link rel="stylesheet" href="index.css">
-  </head>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notes on Blue — Landing</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yce2qid.css">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header class="title">
+    <span class="notes">Notes on</span>
+    <span class="blue">Blue</span>
+  </header>
 
-  <body>
-    <div class="wrapper">
+  <!-- ...head, header 동일... -->
+<main class="stage">
+  <section id="zone" class="bracket-zone" data-state="five">
+    <div class="paren-text left">(</div>
 
-      <!-- TEXT -->
-      <h1 class="title notes">Notes</h1>
-      <h1 class="title on">on</h1>
-      <h1 class="title blue">Blue</h1>
+   <div class="boxes">
+  <a href="notesonblue.html" class="box" data-num="1" data-title="Notes on Blue"    data-author="Moyra Davey"><span class="num">1</span></a>
+  <a href="fassbinder.html"       class="box" data-num="2" data-title="A Conversation with Fassbinder"    data-author="Peter Jansen (1978)"><span class="num">2</span></a>
+  <a href="blindness.html"       class="box" data-num="3" data-title="Lecture on Blindess"   data-author="Jorge Luis Borges"><span class="num">3</span></a>
+  <a href="blindnessbook.html"       class="box" data-num="4" data-title="Blindness"    data-author="Jorge Luis Borges (1977)"><span class="num">4</span></a>
+  <a href="blue.html"       class="box" data-num="5" data-title="Blue" data-author="Derek Jarman (1993)"><span class="num">5</span></a>
+  <a href="giotto'sjoy.html"       class="box" data-num="6" data-title="Giotto's Joy"   data-author="Julia Kresteva"><span class="num">6</span></a>
+  <a href="theaddict.html"       class="box" data-num="7" data-title="The Addict"    data-author="Anne Sexton"><span class="num">7</span></a>
+</div>
 
-      <!-- PATTERN 1 (Top Right) -->
-      <div class="pattern p1">
-        <!-- 1 -->
-        <a href="notesonblue.html" class="sq is-link" aria-label="Notes on Blue"></a>
-        <!-- 2 -->
-        <span class="sq"></span>
-        <!-- 3 -->
-        <a href="fassbinder.html" class="sq is-link" aria-label="Fassbinder"></a>
-        <!-- 4 -->
-        <span class="sq"></span>
-        <!-- 5 -->
-        <span class="sq"></span>
-      </div>
 
-      <!-- PATTERN 2 (Middle Left) -->
-      <div class="pattern p2">
-        <!-- 6 -->
-        <a href="blindness.html" class="sq is-link" aria-label="Blindness"></a>
-        <!-- 7 -->
-        <a href="blindnessbook.html" class="sq is-link" aria-label="Blindness Book"></a>
-        <!-- 8 -->
-        <span class="sq"></span>
-        <!-- 9 -->
-        <a href="blue.html" class="sq is-link" aria-label="Blue"></a>
-        <!-- 10 -->
-        <span class="sq"></span>
-      </div>
+    <!-- ▼ 호버 타이틀 표시 영역 -->
+  <div class="hover-title" aria-live="polite">
+  <span class="t-title">_</span><span class="t-by"> by </span><span class="t-author">_</span>
+</div>
 
-      <!-- PATTERN 3 (Bottom Right) -->
-      <div class="pattern p3">
-        <!-- 11 -->
-        <span class="sq"></span>
-        <!-- 12 -->
-        <span class="sq"></span>
-        <!-- 13 -->
-        <span class="sq"></span>
-        <!-- 14 -->
-        <a href="giotto'sjoy.html" class="sq is-link" aria-label="Giotto’s Joy"></a>
-        <!-- 15 -->
-        <a href="theaddict.html" class="sq is-link" aria-label="The Addict"></a>
-      </div>
+    <div class="paren-text right">)</div>
+  </section>
+</main>
+<!-- ...footer, script 동일... -->
 
-    </div>
-  </body>
-</html>
 
+  <footer class="footer">
+    <a href="about.html" class="about">About</a>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
 </html>

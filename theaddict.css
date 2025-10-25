@@ -15,7 +15,7 @@ body::before {
 
 /* 기본 레이아웃 */
 body {
-  background: #324191;
+  background: #3b44b3;
   font-family: "freight-big-pro", serif;
   height: 100vh;
   display: grid;
@@ -119,7 +119,7 @@ body {
 /* hover 시 피드백 */
 .corner-link:hover .sq,
 .corner-link:focus-visible .sq {
-  background:#324191;
+  background:#3b44b3;
   outline: none;
 }
 
@@ -151,7 +151,7 @@ html, body { height: 100%; margin: 0; overflow: hidden; }
   -webkit-overflow-scrolling: touch;
 
   padding:0rem 2rem 2rem 2rem;
-  background: #324191;
+  background: #3b44b3;
   color: #e8ecff;
   border-radius: 18px;
   line-height: 1.8;
@@ -175,14 +175,13 @@ font-family: "AlcalaTrial";
 
 /* 시스템이 선택한 틴트 상태 */
 .char.tinted {
-  color: #324191;       /* 🔹요청한 컬러 */
+  color: #3b44b3;       /* 🔹요청한 컬러 */
 }
 
 /* 사용자가 읽고자 hover한 문자는 항상 흰색으로 */
 .char:hover {
   color: #fff !important;
 }
-
 
 
   
