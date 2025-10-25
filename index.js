@@ -43,3 +43,31 @@ zone.querySelectorAll(".box").forEach(box => {
   box.addEventListener("focus", show);
   box.addEventListener("blur", hide);
 });
+// ===== About Hover 모드 토글 =====
+const aboutLink = document.querySelector('.about');
+const aboutDesc  = document.getElementById('about-desc');
+let aboutTimer;
+
+// 켜기
+function openAbout(){
+  clearTimeout(aboutTimer);
+  document.body.classList.add('about-mode');
+}
+
+// 끄기 (살짝 지연으로 깜빡임 방지)
+function closeAbout(){
+  clearTimeout(aboutTimer);
+  aboutTimer = setTimeout(()=> {
+    document.body.classList.remove('about-mode');
+  }, 60);
+}
+
+// About에 올리면 켜기 / 떼면 끄기
+aboutLink.addEventListener('mouseenter', openAbout);
+aboutLink.addEventListener('mouseleave', closeAbout);
+aboutLink.addEventListener('focus', openAbout);
+aboutLink.addEventListener('blur', closeAbout);
+
+// 설명 박스 위에 있는 동안도 유지(읽을 수 있게)
+aboutDesc.addEventListener('mouseenter', openAbout);
+aboutDesc.addEventListener('mouseleave', closeAbout);

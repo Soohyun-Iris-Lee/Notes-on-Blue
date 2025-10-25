@@ -79,8 +79,12 @@ body{
   font-size:clamp(16px,1.8vw,26px);
   font-family: "freight-big-pro", serif;
   font-weight: 300;
+  transition: opacity 0.3s ease; /* 🔹부드러운 전환 추가 */
 }
-.about:focus-visible{ outline:2px solid var(--white); outline-offset:4px; border-radius:4px; }
+.about:hover,
+.about:focus-visible {
+  opacity: 0.3;  /* 🔹살짝 투명해짐 */
+}
 
 /* ================= 무대/괄호/박스 공통 ================= */
 .stage{
@@ -259,4 +263,61 @@ html, body {
 }
 .panel {
   overflow: hidden;   /* 스크롤 완전히 차단 */
+}
+
+/* About 모드 토글 클래스 */
+.about-mode .bracket-zone{
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: opacity .35s ease, transform .35s ease;
+}
+.bracket-zone{ transition: opacity .35s ease, transform .35s ease; }
+
+/* 중앙 설명 패널: 기본은 숨김 */
+.about-desc{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -44%);
+  width: min(78ch, 70vw);
+  max-width: 900px;
+  color: var(--white);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .45s ease, visibility 0s linear .45s, transform .45s ease;
+  z-index: 20; /* 헤더/푸터와 함께 항상 위에 */
+}
+
+.about-desc p{
+  margin: 0 0 1.2em 0;
+  line-height: 1.9;
+  font-family: "freight-big-pro", serif;   /* 본문 폰트 */
+  font-weight: 300;
+  font-size: clamp(16px, 1.25vw, 20px);
+}
+.about-desc em{
+  font-family: "LeopardoTrial", serif;     /* 기울임 강조 */
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* About 모드에서 설명 표시 */
+.about-mode .about-desc{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, -48%); /* 살짝 위로 */
+  transition: opacity .45s ease, visibility 0s, transform .45s ease;
+}
+
+/* About 링크 hover 효과(요청하신 opacity 낮춤) */
+.about{
+  transition: opacity .25s ease;
+}
+.about:hover,
+.about:focus-visible{
+  opacity: .65;
 }
