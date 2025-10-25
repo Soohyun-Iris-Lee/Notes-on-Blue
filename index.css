@@ -18,7 +18,7 @@
   /* 괄호 간격 (반응형: vmin 기반) */
   --paren-unit: 1vmin;                   /* 1vmin = 화면 짧은 변의 1% */
   --paren-gap-five:  0;                  /* 초기 5개 상태 */
-  --paren-gap-one:  -30;                  /* 모일 때(좁힘) 숫자만 조절 */
+  --paren-gap-one:  -40;                  /* 모일 때(좁힘) 숫자만 조절 */
   --paren-gap-seven: 22;                 /* 펼칠 때(넓힘) 숫자만 조절 */
 
   /* 트랜지션 */
