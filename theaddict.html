@@ -7,18 +7,16 @@
   <link rel="stylesheet" href="theaddict.css">
 </head>
 <body>
-
   <div class="wrapper">
-    <!-- 헤더(기존 위치 유지) -->
     <div class="content single-line">
       <h1>The Addict <span class="author">by Anne Sexton</span></h1>
     </div>
 
-    <!-- 🔵 패널: 가운데, 내부만 스크롤 -->
+    <!-- 중앙 패널 -->
     <section class="hero">
       <div class="panel">
         <p>
-Sleepmonger,
+         Sleepmonger,
 deathmonger,
 with capsules in my palms each night,
 eight at a time from sweet pharmaceutical bottles
@@ -85,15 +83,25 @@ Now I'm numb.
       </div>
     </section>
 
+    <!-- 코너 링크 (깨진 마크업 수정) -->
     <a class="corner br corner-link" href="index.html" aria-label="Back to index (Notes on Blue)" title="Back to index">
-      <span class="sq"></span>
-      <span class="sq"></span>
-      <span class="sq"></span>
-      <span class="sq"></span>
-      <span class="sq"></span>
-    </a>lass="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq"></span>
-    </div>
+      <span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq"></span>
+    </a>
   </div>
+
+  <!-- 두 트랙: 가능하면 파일명 공백을 지우거나, 아래처럼 %20 사용 -->
+  <audio id="audio1" preload="auto" loop>
+    <source src="theaddict.mp3" type="audio/mp3" />
+  </audio>
+  <audio id="audio2" preload="auto" loop>
+    <source src="theaddict2.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- 자동재생 차단 시 노출될 오버레이 -->
+  <div id="playOverlay" class="overlay" style="display:none;">
+    <button id="playBtn" class="overlay-btn" aria-label="Play audio">Play sound</button>
+  </div>
+
   <script src="theaddict.js"></script>
 </body>
 </html>
