@@ -101,7 +101,7 @@ body{
 .paren-text{
   position:absolute; top:50%;
   transform:translateY(-50%) translateX(0);
-  color:var(--white);
+  color:#3b44b3;
   font-size:clamp(64px,9vw,120px);
   font-family:"YourBracketFont", serif; /* 원하는 괄호 폰트명 */
   line-height:1;
